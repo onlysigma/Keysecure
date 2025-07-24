@@ -318,6 +318,10 @@
       }
 
      
+      if (data && data.user) {
+        msg.innerText = 'Signup successful! Check your email to verify.';
+        msg.className = 'success';
+      }
 
       loadingBar.style.display = 'none';
     }
